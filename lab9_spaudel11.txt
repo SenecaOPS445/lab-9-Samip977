@@ -1,0 +1,44 @@
+
+PLAY [Configure OPS445 VM] *****************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [student]
+
+TASK [update Apache] ***********************************************************
+ok: [student]
+
+TASK [install EPEL repository] *************************************************
+ok: [student]
+
+TASK [remove 'tree' package] ***************************************************
+ok: [student]
+
+TASK [set hostname] ************************************************************
+ok: [student]
+
+TASK [create a new user with sudo access] **************************************
+changed: [student]
+
+TASK [ensure .ssh directory exists] ********************************************
+ok: [student]
+
+TASK [add SSH key] *************************************************************
+ok: [student]
+
+TASK [set permissions on authorized_keys] **************************************
+ok: [student]
+
+TASK [setup directory structure for labs] **************************************
+ok: [student] => (item=1)
+ok: [student] => (item=2)
+ok: [student] => (item=3)
+ok: [student] => (item=4)
+ok: [student] => (item=5)
+ok: [student] => (item=6)
+ok: [student] => (item=7)
+ok: [student] => (item=8)
+ok: [student] => (item=9)
+
+PLAY RECAP *********************************************************************
+student                    : ok=10   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
